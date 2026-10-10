@@ -295,9 +295,10 @@ while True:
                 print("А про деньги то не подумал(у тя их нету)")
             if player_dep == "random_number":
                 print(f"Что, ты угадал! Число {random_number}")
-                moneybal = moneybal (casino *2)
+                moneybal = moneybal + (casino *2)
                 print("Поздравляю, твой выйгрыш (casino *2)")
             else:
+                moneybal = moneybal - casino
                 print(f"Увы, ты не угадал( Ты теряешь {casino}")
                 print(f"Выйгрышное число было {random_number}")
                 time.sleep(6)
